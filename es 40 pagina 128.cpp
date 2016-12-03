@@ -4,18 +4,30 @@
 #include <iostream>
 using namespace std;
 
-float m, q, Yp, Xp;
+float m, q, Xp, Yp;
+struct punto{
+    float Xp;
+    float Yp;
+
+} ;
+
+struct retta {
+    float m;
+    float q;
+
+};
 
 bool Appartenenza (float m, float q, float Yp, float Xp)
     {
-        if (Yp-(m*Xp)-q=0)
-            return Appartenenza=true;
-        else
-            return Appartenenza=false;
+        if (Yp=(m*Xp)+q) Appartenenza=true;
+        else Appartenenza=false;
+
+        return Appartenenza;
     }
 
 
     int main (){
+    float m, q, Yp, Xp;
 
     cout<<"Inserire il coefficiente angolare:  "<<endl;
     cin>>m;
